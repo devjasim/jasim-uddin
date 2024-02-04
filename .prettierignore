@@ -1,0 +1,14 @@
+.eslintignore
+.prettierignore
+Jenkinsfile-multi
+Dockerfile
+
+/out
+/.exports
+/standalone
+
+.next
+.husky
+sw.js
+workbox*.js
+*.d.ts
