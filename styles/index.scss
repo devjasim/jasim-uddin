@@ -1,0 +1,171 @@
+.hero-section-content {
+    h2 {
+        color: transparent !important;
+        background-clip: text !important;
+        -webkit-background-clip: text;
+        @apply bg-gradient-to-r from-primary to-background;
+    }
+}
+
+.section-overview {
+    li {
+        position: relative;
+        @apply transition ease-in-out duration-300;
+
+        .redirect {
+            @apply transition text-2xl text-primary ease-in-out duration-700;
+            position: absolute;
+            top: 50%;
+            right: 2rem;
+            transform: translateY(-50%);
+            opacity: 0;
+            visibility: hidden;
+            z-index: 5;
+            svg {
+                cursor: pointer;
+                transform: scale(0);
+                @apply transition ease-in-out duration-700;
+            }
+        }
+
+        &::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-width: 2px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @apply border-transparent border-opacity-0 transition-all ease-in-out duration-500 rounded-sm;
+            position: absolute;
+        }
+        &:hover {
+            .redirect {
+                visibility: visible;
+                opacity: 1;
+                svg {
+                    transform: scale(1.5);
+                }
+            }
+            &::after {
+                width: 100%;
+                height: 100%;
+                @apply dark:border-primary border-opacity-100 border-background;
+            }
+        }
+        // &:nth-of-type(1) {
+        //     &::after {
+        //         top: 50%;
+        //         right: 0;
+        //         transform: translateY(-50%);
+        //     }
+        // }
+
+        // &:nth-of-type(2) {
+        //     &::after {
+        //         top: 0;
+        //         left: 50%;
+        //         border-width: 2px;
+        //         transform: translateX(-50%);
+        //     }
+        // }
+        // &:nth-last-of-type(1) {
+        //     &::after {
+        //         border-width: 2px 0px 2px 2px;
+        //         top: 50%;
+        //         left: 0;
+        //         transform: translateY(-50%);
+        //     }
+        // }
+    }
+}
+
+.about-section {
+    .scroll-animation h1 span,
+    .scroll-animation p span {
+        @apply dark:text-text-transparent-dark text-text-transparent-light;
+        background-clip: text;
+        background-repeat: no-repeat;
+        background-size: 0% 100%;
+        @apply dark:bg-gradient-to-r dark:from-text dark:to-text bg-gradient-to-r from-background to-background;
+        animation: scroll-animation linear forwards;
+        animation-timeline: view(y);
+    }
+    .scroll-animation h1 span {
+        animation-range-start: cover 2vh;
+        animation-range-end: cover 10vh;
+    }
+
+    .scroll-animation p {
+        &:first-child {
+            span {
+                animation-range-start: cover calc(11vh - 80px);
+                animation-range-end: cover 20vh;
+            }
+        }
+
+        &:nth-of-type(2) {
+            span {
+                animation-range-start: cover calc(20vh - 80px);
+                animation-range-end: cover 40vh;
+            }
+        }
+
+        &:nth-of-type(3) {
+            span {
+                animation-range-start: cover calc(40vh - 80px);
+                animation-range-end: cover 50vh;
+            }
+        }
+
+        &:nth-of-type(4) {
+            span {
+                animation-range-start: contain calc(52vh - 80px);
+                animation-range-end: contain 60vh;
+            }
+        }
+    }
+
+    .profile-picture {
+        @apply transition ease-in-out duration-300;
+        .wrapper {
+            @apply rounded-md transition ease-in-out duration-300 flex items-center justify-center;
+        }
+        &:not(:hover) {
+            .wrapper {
+                @apply bg-primary;
+            }
+        }
+        &:hover {
+            .wrapper {
+                @apply bg-text;
+            }
+        }
+        img,
+        span {
+            transition: 0.3s all ease-in-out;
+        }
+        img {
+            filter: grayscale(100) contrast(1);
+            mix-blend-mode: multiply;
+        }
+        &:hover {
+            img {
+                filter: initial;
+            }
+        }
+        &:hover {
+            transform: translate3d(-7px, -7px, 7px);
+            span {
+                top: 10px;
+                left: 10px;
+            }
+        }
+    }
+}
+
+@keyframes scroll-animation {
+    to {
+        background-size: 100% 100%;
+    }
+}
