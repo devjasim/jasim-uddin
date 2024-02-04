@@ -34,7 +34,7 @@ export default function AboutMe() {
                                     </span>
                                 }
                             />
-                            <TextView.Paragraph size={'lg'} text={<span>So far, I've built some exciting full stack project.</span>} />
+                            <TextView.Paragraph size={'lg'} text={<span>So far, I&apos;ve built some exciting full stack project.</span>} />
                             <TextView.Paragraph
                                 className="my-5"
                                 size={'lg'}

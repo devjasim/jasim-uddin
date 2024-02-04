@@ -1,10 +1,11 @@
 'use client';
 
 import { useTheme } from 'next-themes';
-import { join } from 'path';
+
 import React from 'react';
-import Button from '@components/common/Button';
 import { MdDarkMode, MdLightMode } from 'react-icons/md';
+
+import Button from '@components/common/Button';
 
 type Theme = 'light' | 'dark';
 

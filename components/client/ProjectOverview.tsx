@@ -1,9 +1,11 @@
-import TextView from '@components/common/TextView';
-import { BsArrowRightSquare } from 'react-icons/bs';
-import { BiLinkExternal } from 'react-icons/bi';
 import Link from 'next/link';
 
-export default function () {
+import { BiLinkExternal } from 'react-icons/bi';
+import { BsArrowRightSquare } from 'react-icons/bs';
+
+import TextView from '@components/common/TextView';
+
+export default function ProjectOverview() {
     return (
         <section className="text-white mb-32 md:mb-48 md:mx-32 section-overview">
             <div className="mx-auto">
