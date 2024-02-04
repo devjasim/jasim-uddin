@@ -1,8 +1,10 @@
+import Link from 'next/link';
+
 import TextView from '@components/common/TextView';
 
 export default function AboutMe() {
     return (
-        <section className="mb-24 about-section" id="about">
+        <section className="mb-24 md:mb-40 about-section" id="about">
             <div className="flex items-center gap-10 md:flex-row flex-col-reverse justify-between">
                 <div className="md:w-full lg:w-1/7">
                     <div className="scroll-animation">
@@ -17,9 +19,9 @@ export default function AboutMe() {
                                 size={'lg'}
                                 text={
                                     <span>
-                                        Hello! My name is Mohammad Montasim -Al- Mamun Shuvo and I enjoy creating things that live on the internet. My
-                                        interest in web development started back in 2019 when I was doing a Diploma Engineering project - turns out
-                                        this project taught me a lot about HTML, CSS, &amp; JavaScript.
+                                        As a Software Engineer specializing in the MERN stack with a focus on Frontend development, I bring four years
+                                        of rich experience to the table. Throughout my career, I&apos;ve had the privilege of contributing to a
+                                        variety of projects within three distinct companies in Bangladesh.
                                     </span>
                                 }
                             />
@@ -28,13 +30,16 @@ export default function AboutMe() {
                                 className="mt-5"
                                 text={
                                     <span>
-                                        Fast-forward to today, and I’ve had the privilege of working at an My MedicalHUB International Ltd., as a
-                                        Junior Frontend Developer. My main focus these days is building accessible, inclusive products and digital
-                                        experiences using MERN Stack.
+                                        Presently, I am working with{' '}
+                                        <Link className="text-primary" target="_blank" href="https://tulip-tech.com">
+                                            TulipTech LTD
+                                        </Link>
+                                        , a dynamic UK-based software company active in Bangladesh. Here, my role centers around developing
+                                        user-centric applications that deliver significant real-world impact. My commitment lies in crafting rich,
+                                        interactive experiences tailored to meet user needs and overcome real-world challenges.
                                     </span>
                                 }
                             />
-                            <TextView.Paragraph size={'lg'} text={<span>So far, I&apos;ve built some exciting full stack project.</span>} />
                             <TextView.Paragraph
                                 className="my-5"
                                 size={'lg'}
@@ -70,7 +75,7 @@ export default function AboutMe() {
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A.998.998 0 0 0 5 3v18a1 1 0 0 0 .536.886zM7 4.909 17.243 12 7 19.091V4.909z"></path>
                             </svg>
-                            React JS
+                            TypeScript
                         </small>
                         <small className="flex items-center gap-x-3">
                             <svg
@@ -84,7 +89,7 @@ export default function AboutMe() {
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A.998.998 0 0 0 5 3v18a1 1 0 0 0 .536.886zM7 4.909 17.243 12 7 19.091V4.909z"></path>
                             </svg>
-                            Node.js
+                            React.JS
                         </small>
                         <small className="flex items-center gap-x-3">
                             <svg
@@ -98,7 +103,21 @@ export default function AboutMe() {
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A.998.998 0 0 0 5 3v18a1 1 0 0 0 .536.886zM7 4.909 17.243 12 7 19.091V4.909z"></path>
                             </svg>
-                            Express.js
+                            Next.js
+                        </small>
+                        <small className="flex items-center gap-x-3">
+                            <svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                strokeWidth="0"
+                                viewBox="0 0 24 24"
+                                className="text-primary"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A.998.998 0 0 0 5 3v18a1 1 0 0 0 .536.886zM7 4.909 17.243 12 7 19.091V4.909z"></path>
+                            </svg>
+                            Redux
                         </small>
                         <small className="flex items-center gap-x-3">
                             <svg
@@ -113,20 +132,6 @@ export default function AboutMe() {
                                 <path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A.998.998 0 0 0 5 3v18a1 1 0 0 0 .536.886zM7 4.909 17.243 12 7 19.091V4.909z"></path>
                             </svg>
                             Tailwind CSS
-                        </small>
-                        <small className="flex items-center gap-x-3">
-                            <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth="0"
-                                viewBox="0 0 24 24"
-                                className="text-primary"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A.998.998 0 0 0 5 3v18a1 1 0 0 0 .536.886zM7 4.909 17.243 12 7 19.091V4.909z"></path>
-                            </svg>
-                            BootStrap
                         </small>
                     </div>
                 </div>

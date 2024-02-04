@@ -18,7 +18,7 @@ const config: Config = {
                     DEFAULT: '#ccd6f6',
                     100: '#8892b0',
                     transparent: {
-                        dark: 'hsl(0 0% 100% / 0.2)',
+                        dark: 'hsl(0 0% 100% / 0.1)',
                         light: 'hsla(217, 65%, 11%, .3)',
                     },
                     gradient: {

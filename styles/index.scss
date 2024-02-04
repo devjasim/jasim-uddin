@@ -53,30 +53,6 @@
                 @apply dark:border-primary border-opacity-100 border-background;
             }
         }
-        // &:nth-of-type(1) {
-        //     &::after {
-        //         top: 50%;
-        //         right: 0;
-        //         transform: translateY(-50%);
-        //     }
-        // }
-
-        // &:nth-of-type(2) {
-        //     &::after {
-        //         top: 0;
-        //         left: 50%;
-        //         border-width: 2px;
-        //         transform: translateX(-50%);
-        //     }
-        // }
-        // &:nth-last-of-type(1) {
-        //     &::after {
-        //         border-width: 2px 0px 2px 2px;
-        //         top: 50%;
-        //         left: 0;
-        //         transform: translateY(-50%);
-        //     }
-        // }
     }
 }
 
@@ -92,38 +68,38 @@
         animation-timeline: view(y);
     }
     .scroll-animation h1 span {
-        animation-range-start: cover 2vh;
-        animation-range-end: cover 10vh;
+        animation-range-start: cover 20vh;
+        animation-range-end: cover 22vh;
     }
 
     .scroll-animation p {
         &:first-child {
             span {
-                animation-range-start: cover calc(11vh - 80px);
-                animation-range-end: cover 20vh;
+                animation-range-start: cover calc(22vh - 80px);
+                animation-range-end: cover 40vh;
             }
         }
 
         &:nth-of-type(2) {
             span {
-                animation-range-start: cover calc(20vh - 80px);
-                animation-range-end: cover 40vh;
+                animation-range-start: cover calc(35vh - 80px);
+                animation-range-end: cover 60vh;
             }
         }
 
         &:nth-of-type(3) {
             span {
-                animation-range-start: cover calc(40vh - 80px);
-                animation-range-end: cover 50vh;
+                animation-range-start: cover calc(52vh - 80px);
+                animation-range-end: cover 70vh;
             }
         }
 
-        &:nth-of-type(4) {
-            span {
-                animation-range-start: contain calc(52vh - 80px);
-                animation-range-end: contain 60vh;
-            }
-        }
+        // &:nth-of-type(4) {
+        //     span {
+        //         animation-range-start: contain calc(52vh - 80px);
+        //         animation-range-end: contain 60vh;
+        //     }
+        // }
     }
 
     .profile-picture {
@@ -167,5 +143,60 @@
 @keyframes scroll-animation {
     to {
         background-size: 100% 100%;
+    }
+}
+
+.experience-timeline {
+    .timeline-container {
+        .item {
+            .timeline-item {
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: 100%;
+                    background-color: theme('colors.text.100');
+                    @apply bg-opacity-10;
+                    top: 0;
+                }
+
+                .timeline-card {
+                    .content {
+                        @apply bg-text transition ease-in-out duration-500 bg-opacity-5 py-4 rounded-md px-5 cursor-pointer;
+                    }
+                }
+            }
+            &:nth-child(odd) {
+                margin-left: auto;
+                .timeline-item {
+                    .timeline-card {
+                        @apply pl-10;
+                    }
+                    .timeline-icon {
+                        left: -6px;
+                    }
+
+                    &:after {
+                        left: -0.5px;
+                    }
+                }
+            }
+            &:nth-child(even) {
+                margin-right: auto;
+                text-align: right;
+                .timeline-item {
+                    @apply relative;
+                    .timeline-card {
+                        @apply pr-10 ml-auto;
+                    }
+                    .timeline-icon {
+                        right: -6px;
+                    }
+                    &:after {
+                        right: -0.5px;
+                    }
+                }
+            }
+        }
     }
 }
