@@ -76,21 +76,21 @@
         &:first-child {
             span {
                 animation-range-start: cover calc(22vh - 80px);
-                animation-range-end: cover 40vh;
+                animation-range-end: cover 50vh;
             }
         }
 
         &:nth-of-type(2) {
             span {
-                animation-range-start: cover calc(35vh - 80px);
-                animation-range-end: cover 60vh;
+                animation-range-start: cover calc(45vh - 80px);
+                animation-range-end: cover 70vh;
             }
         }
 
         &:nth-of-type(3) {
             span {
-                animation-range-start: cover calc(52vh - 80px);
-                animation-range-end: cover 70vh;
+                animation-range-start: cover calc(62vh - 80px);
+                animation-range-end: cover 75vh;
             }
         }
 
@@ -162,7 +162,25 @@
 
                 .timeline-card {
                     .content {
-                        @apply bg-text transition ease-in-out duration-500 bg-opacity-5 py-4 rounded-md px-5 cursor-pointer;
+                        @apply transition ease-in-out duration-300 py-4 rounded-md px-5 cursor-pointer;
+                        svg {
+                            @apply transition ease-in-out duration-300;
+                        }
+
+                        .description {
+                            @apply dark:text-text-100 transition-colors ease-in-out duration-300;
+                        }
+
+                        &:hover {
+                            @apply bg-text bg-opacity-5;
+                            svg {
+                                transform: translate3d(5px, -5px, 5px);
+                            }
+
+                            .description {
+                                @apply dark:text-text;
+                            }
+                        }
                     }
                 }
             }
@@ -194,6 +212,11 @@
                     }
                     &:after {
                         right: -0.5px;
+                    }
+                }
+                .content {
+                    .items-center {
+                        flex-direction: row-reverse;
                     }
                 }
             }
