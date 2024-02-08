@@ -8,8 +8,8 @@ import StatusItem from './TimelineItem';
 
 const ExperienceSection = () => {
     return (
-        <section className="mb-24 experience-timeline" id="experience">
-            <div className="mb-12 xl:max-w-3xl mx-auto">
+        <section className="mb-24 md:mb-40 experience-timeline" id="experience">
+            <div className="mb-20 xl:max-w-3xl mx-auto">
                 <div className="flex items-center gap-6">
                     <TextView.HeadingOne
                         className="lg:text-3xl md:text-3xl text-2xl text-accent font-bold main-heading"

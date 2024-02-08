@@ -104,6 +104,12 @@
 
     .profile-picture {
         @apply transition ease-in-out duration-300;
+        opacity: 0.5;
+        transform: scale(0.6);
+        animation: profilePictureFadeIn linear forwards;
+        animation-timeline: view();
+        animation-range: entry;
+
         .wrapper {
             @apply rounded-md transition ease-in-out duration-300 flex items-center justify-center;
         }
@@ -137,6 +143,13 @@
                 left: 10px;
             }
         }
+    }
+}
+
+@keyframes profilePictureFadeIn {
+    to {
+        transform: scale(1);
+        opacity: 1;
     }
 }
 
