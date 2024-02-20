@@ -4,7 +4,7 @@ import { BiLinkExternal } from 'react-icons/bi';
 
 import TextView from '@components/common/TextView';
 
-import StatusItem from './TimelineItem';
+import TimelineItem from './TimelineItem';
 
 const ExperienceSection = () => {
     return (
@@ -19,7 +19,7 @@ const ExperienceSection = () => {
             </div>
             <div className="flex flex-col items-center timeline-container">
                 <div className="md:w-1/2 item">
-                    <StatusItem>
+                    <TimelineItem>
                         <div>
                             <div className="flex items-center gap-x-4">
                                 <TextView.HeadingTwo className="font-bold text-[18px]" text="Software Engineer" />
@@ -35,10 +35,10 @@ const ExperienceSection = () => {
                                 text="Working as a Software Engineer for build scalable and reliable user facing frontend application using React.js, Next.js, Redux, SCSS, CSS, etc. Lead the mentor the Frontend team for multiple projects"
                             />
                         </div>
-                    </StatusItem>
+                    </TimelineItem>
                 </div>
                 <div className="md:w-1/2 item">
-                    <StatusItem>
+                    <TimelineItem>
                         <div>
                             <div className="flex items-center gap-x-4">
                                 <TextView.HeadingTwo className="font-bold text-[18px]" text="Frontend Engineer" />
@@ -54,26 +54,7 @@ const ExperienceSection = () => {
                                 text="Worked as Frontend engineer and played a crucial role to build a SaaS application using React.js, Redux and Material UI which provides SEO services. Gained a 50% company revenue growth. I've achieved a 50% boost on my skills in developing dashboard."
                             />
                         </div>
-                    </StatusItem>
-                </div>
-                <div className="md:w-1/2 item">
-                    <StatusItem>
-                        <div>
-                            <div className="flex items-center gap-x-4">
-                                <TextView.HeadingTwo className="font-bold text-[18px]" text="Frontend Developer" />
-                                {' • '}
-                                <TextView.HeadingTwo className="font-medium" text="Print Wizard" />
-                                <Link target="_blank noreferrer" href="#">
-                                    <BiLinkExternal />
-                                </Link>
-                            </div>
-                            <TextView.Paragraph className="text-sm italic mt-1 opacity-80" text="August 2019 - January 2020" />
-                            <TextView.Paragraph
-                                className="mt-3 text-base description"
-                                text="Design and develop responsive web application using HTML, CSS, SCSS, and partially wordpress. Implemented animation using GSAP, Jquery, and JavaScript. Visualize data using Chart.js and Highchart"
-                            />
-                        </div>
-                    </StatusItem>
+                    </TimelineItem>
                 </div>
             </div>
         </section>
