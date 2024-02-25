@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
 import { Barlow } from 'next/font/google';
 
+import SocialLinks from '@components/client/SocialLinks';
 import Provider from '@components/common/Providers';
 import Footer from '@components/footer';
 import Header from '@components/header';
 
 import './globals.scss';
-import SocialLinks from '@components/client/SocialLinks';
 
 const inter = Barlow({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700'] });
 
