@@ -18,12 +18,11 @@
             top: 50%;
             right: 2rem;
             transform: translateY(-50%);
-            opacity: 0;
-            visibility: hidden;
+            opacity: 100;
             z-index: 5;
             svg {
                 cursor: pointer;
-                transform: scale(0);
+                transform: scale(0.8);
                 @apply transition ease-in-out duration-700;
             }
         }
@@ -41,8 +40,6 @@
         }
         &:hover {
             .redirect {
-                visibility: visible;
-                opacity: 1;
                 svg {
                     transform: scale(1.5);
                 }

@@ -14,6 +14,10 @@ function ThemeToggle() {
     const { theme, setTheme } = useTheme();
 
     React.useEffect(() => {
+        setTheme('dark');
+    }, [setTheme]);
+
+    React.useEffect(() => {
         setMounted(true);
     }, []);
 

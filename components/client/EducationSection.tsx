@@ -98,7 +98,7 @@ export default function EducationSection() {
                 <div>
                     <TextView.HeadingThree className="text-accent text-xl font-semibold" text="Diploma in Computer Engineering" />
                     <TextView.HeadingThree className="text-lg my-2" text="MAIT Engineering Institute, Dhaka, Bangladesh" />
-                    <TextView.Paragraph className="text-accent" text="January 2020 - October 2023" />
+                    <TextView.Paragraph className="text-accent" text="January 2015 - March 2019" />
                     <div className="mt-5 grid gap-y-2 ml-3">
                         <TextView.Paragraph
                             className="flex items-center gap-x-3"

@@ -2,9 +2,11 @@ import type { Metadata } from 'next';
 import { Barlow } from 'next/font/google';
 
 import Provider from '@components/common/Providers';
+import Footer from '@components/footer';
 import Header from '@components/header';
 
 import './globals.scss';
+import SocialLinks from '@components/client/SocialLinks';
 
 const inter = Barlow({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700'] });
 
@@ -25,8 +27,10 @@ export default function RootLayout({
                 <Provider>
                     <main>
                         <Header />
+                        <SocialLinks />
                         <div className="md:mt-16 mt-14 lg:mt-20 max-h-[calc(100vh-80px)] overflow-y-auto max-w-full overflow-x-hidden">
                             {children}
+                            <Footer />
                         </div>
                     </main>
                 </Provider>
