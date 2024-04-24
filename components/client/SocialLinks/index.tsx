@@ -6,7 +6,7 @@ import './SocialLinks.modules.scss';
 
 export default function SocialLinks() {
     return (
-        <div className="fixed bottom-24 left-10 social-links w-10">
+        <div className="fixed bottom-24 left-5 md:left-10 social-links w-10">
             <ul className="space-y-4">
                 <li className="size-8">
                     <Link href="https://github.com/devjasim" target="_blank">

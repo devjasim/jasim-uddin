@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Barlow } from 'next/font/google';
 
 import SocialLinks from '@components/client/SocialLinks';
+import VerticalGmail from '@components/client/VerticalGmail';
 import Provider from '@components/common/Providers';
 import Footer from '@components/footer';
 import Header from '@components/header';
@@ -29,6 +30,7 @@ export default function RootLayout({
                     <main>
                         <Header />
                         <SocialLinks />
+                        <VerticalGmail />
                         <div className="md:mt-16 mt-14 lg:mt-20 max-h-[calc(100vh-80px)] overflow-y-auto max-w-full overflow-x-hidden">
                             {children}
                             <Footer />

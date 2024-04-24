@@ -49,3 +49,96 @@
         opacity: 0.6;
     }
 }
+
+.navbar {
+    .navbar-end {
+        .navbar-items {
+            @media screen and (max-width: 1024px) {
+                position: fixed;
+                right: 0;
+                transform: translateX(100%);
+                padding: 2rem 4rem;
+                transition: 0.4s all ease-in-out;
+                @apply bg-secondary md:top-[60px] top-[55px];
+                border-radius: 0 5px 0 5px;
+
+                ul {
+                    @apply flex-col gap-y-6;
+                }
+
+                &.show-menu {
+                    transform: translateX(0%);
+                }
+            }
+        }
+    }
+}
+
+.menu-toggle-button {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    transition: 0.4s all ease-in-out;
+    overflow: hidden;
+    .one,
+    .two {
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        transition: 0.4s all ease-in-out;
+        > span {
+            width: 35px;
+            display: block;
+            height: 8px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            transition: 0.4s all ease-in-out;
+            @mixin afterBefore {
+                content: '';
+                position: absolute;
+                height: 8px;
+                width: 8px;
+                background: theme('colors.primary');
+                border-radius: 50%;
+                transition: 0.4s all ease-in-out;
+            }
+            &::after {
+                @include afterBefore;
+                top: 0;
+                left: 0;
+            }
+            &::before {
+                @include afterBefore;
+                right: 0;
+            }
+
+            span {
+                &::after {
+                    @include afterBefore;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+    .one {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    .two {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+    &.collapsed {
+        .two {
+            transform: translate(-50%, -50%) rotate(90deg);
+        }
+        .one {
+            transform: translate(-50%, -50%) rotate(360deg);
+        }
+    }
+}

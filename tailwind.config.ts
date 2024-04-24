@@ -4,6 +4,21 @@ const config: Config = {
     darkMode: 'class',
     content: ['./components/**/*.{js,ts,jsx,tsx,mdx}', './app/**/*.{js,ts,jsx,tsx,mdx}'],
     theme: {
+        container: {
+            padding: {
+                DEFAULT: '6rem !important',
+                sm: '4rem !important',
+                lg: '4rem !important',
+                xl: '5rem !important',
+                '2xl': '4rem !important',
+            },
+            screens: {
+                sm: '1500px',
+                lg: '1500px',
+                xl: '1500px',
+                '2xl': '1500px',
+            },
+        },
         extend: {
             boxShadow: {
                 dark: '3px 3px 1px 2px rgba(10, 23, 47, 0.75)',

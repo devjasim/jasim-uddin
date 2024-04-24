@@ -1,0 +1,7 @@
+.vertical-gmail {
+    &::after {
+        @apply absolute h-24 w-[1px] bg-primary bg-opacity-20;
+        content: '';
+        left: 20%;
+    }
+}
