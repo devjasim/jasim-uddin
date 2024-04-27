@@ -17,23 +17,23 @@ export default function Header() {
                 </div>
                 <div className="navbar-end">
                     <div className={`navbar-items lg:flex ${isMenuOPen ? 'show-menu' : 'hide-menu'}`}>
-                        <ul className="menu flex justify-between items-center gap-x-16">
-                            <li>
+                        <ul className="menu flex justify-between items-center gap-x-5 xl:gap-x-8 2xl:gap-x-10">
+                            <li className="navbar-item">
                                 <a href="/#introduction">Home</a>
                             </li>
-                            <li>
+                            <li className="navbar-item">
                                 <a href="/#about">About</a>
                             </li>
-                            <li>
+                            <li className="navbar-item">
                                 <a href="/#education">Education</a>
                             </li>
-                            <li>
+                            <li className="navbar-item">
                                 <a href="/#experience">Experience</a>
                             </li>
-                            <li>
+                            <li className="navbar-item">
                                 <a href="/#section-projects">Projects</a>
                             </li>
-                            <li>
+                            <li className="navbar-item">
                                 <a href="/#contact">Contact</a>
                             </li>
                             <li>

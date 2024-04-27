@@ -1,3 +1,72 @@
+.navbar {
+    .navbar-items {
+        .navbar-item {
+            position: relative;
+            padding: 0.2rem 1rem;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 0;
+                height: 1px;
+                @apply bg-primary;
+                transition: 0.4s all ease-in-out;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 1px;
+                @apply bg-primary;
+                transition: 0.4s all ease-in-out;
+            }
+
+            a {
+                transition: 0.4s all ease-in-out;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 1px;
+                    height: 0;
+                    @apply bg-primary;
+                    transition: 0.4s all ease-in-out;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 1px;
+                    height: 0;
+                    @apply bg-primary;
+                    transition: 0.4s all ease-in-out;
+                }
+            }
+
+            &:hover {
+                &::after,
+                &::before {
+                    width: 100%;
+                }
+                a {
+                    @apply text-primary;
+                    &::after,
+                    &::before {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .hero-section-content {
     h2 {
         color: transparent !important;
