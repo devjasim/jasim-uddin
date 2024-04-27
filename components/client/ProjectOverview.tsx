@@ -14,7 +14,7 @@ export default function ProjectOverview() {
                         <TextView.Paragraph className="text-3xl font-extrabold text-primary dark:text-primary" text="7+" />
                         <TextView.Paragraph className="mt-1 text-xl font-medium text-primary dark:text-primary" text="Frontend Projects" />
                         <div className="redirect">
-                            <Link href="/">
+                            <Link href="/#section-projects">
                                 <BsArrowRightSquare />
                             </Link>
                         </div>
@@ -23,7 +23,7 @@ export default function ProjectOverview() {
                         <TextView.Paragraph text="2+" className="text-3xl font-extrabold text-primary dark:text-primary" />
                         <TextView.Paragraph text="Backend Projects" className="mt-1 text-xl text-primary dark:text-primary font-medium" />
                         <div className="redirect">
-                            <Link href="/">
+                            <Link href="/#section-projects">
                                 <BsArrowRightSquare />
                             </Link>
                         </div>

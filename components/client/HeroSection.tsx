@@ -19,7 +19,7 @@ export default function HeroSection() {
                     />
                 </div>
                 <a
-                    href="https://docs.google.com/document/d/1ZENrcgtfmx5tarZ8fZ-dB17oWfrBtAoEfx04WlV6DdM/edit?usp=sharing"
+                    href="https://docs.google.com/document/d/1D-Bkf8RmwSnyYLe6mOFhulnEl1okAVXwc_twqYD6zmE/edit?usp=sharing"
                     target="_blank"
                     className="mt-16 block max-w-fit"
                     rel="noreferrer">
