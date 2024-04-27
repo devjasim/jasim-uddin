@@ -5,6 +5,7 @@ import React from 'react';
 import { MdStarOutline } from 'react-icons/md';
 import { PiGitForkLight } from 'react-icons/pi';
 
+import { LinkList } from '@components/client/SocialLinks';
 import TextView from '@components/common/TextView';
 
 const Footer = () => {
@@ -28,6 +29,9 @@ const Footer = () => {
 
     return (
         <div className="flex p-2 mb-10 items-center text-sm text-text-100 text-light justify-center flex-col">
+            <div className="sm:hidden block">
+                <LinkList />
+            </div>
             <Link href="https://github.com/devjasim/jasim-uddin" target="_blank">
                 <TextView.Paragraph text="Designed and built with ❤️ by Jasim Uddin" className="!text-text-100" />
                 <div className="flex items-center justify-center gap-4 mt-2">

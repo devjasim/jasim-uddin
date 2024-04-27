@@ -24,6 +24,13 @@
     @apply bg-primary;
 }
 
+.container {
+    @media screen and (max-width: 639.99px) {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+}
+
 .custom-button {
     @apply transition ease-in-out duration-300 outline-none focus:outline-none;
     @apply dark:hover:shadow-light hover:shadow-dark;
@@ -37,6 +44,11 @@
 .main-heading {
     display: flex;
     align-items: center;
+    width: 100%;
+    span {
+        width: 100%;
+        max-width: fit-content;
+    }
     &::after {
         content: '';
         position: relative;
@@ -44,7 +56,8 @@
         margin-left: 20px;
         @apply bg-opacity-30 bg-primary;
         height: 1px;
-        width: 300px;
+        width: 100%;
+        max-width: 300px;
         display: block;
         opacity: 0.6;
     }

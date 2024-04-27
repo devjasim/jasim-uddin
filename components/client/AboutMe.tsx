@@ -6,7 +6,7 @@ export default function AboutMe() {
     return (
         <section className="mb-24 md:mb-40 about-section" id="about">
             <div className="flex items-center gap-10 md:flex-row flex-col-reverse justify-between">
-                <div className="md:w-full lg:w-1/7">
+                <div className="md:w-full lg:w-1/7 max-w-full">
                     <div className="scroll-animation">
                         <div className="flex items-center justify-start gap-x-10">
                             <TextView.HeadingOne

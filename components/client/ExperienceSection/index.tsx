@@ -13,7 +13,7 @@ const ExperienceSection = () => {
                 <div className="flex items-center gap-6">
                     <TextView.HeadingOne
                         className="lg:text-3xl md:text-3xl text-2xl text-accent font-bold main-heading"
-                        text="Companies that I've worked."
+                        text="Companies that I've worked"
                     />
                 </div>
             </div>
@@ -21,13 +21,15 @@ const ExperienceSection = () => {
                 <div className="md:w-1/2 item">
                     <TimelineItem>
                         <div>
-                            <div className="flex items-center gap-x-4">
+                            <div className="sm:flex space-y-4 sm:space-y-0 block items-center gap-x-4">
                                 <TextView.HeadingTwo className="font-bold text-[18px]" text="Software Engineer" />
-                                {' • '}
-                                <TextView.HeadingTwo className="font-medium" text="TulipTech LTD" />
-                                <Link target="_blank noreferrer" href="https://tulip-tech.com">
-                                    <BiLinkExternal />
-                                </Link>
+                                <span className="hidden sm:block">•</span>
+                                <div className="flex items-center justify-start gap-x-4">
+                                    <TextView.HeadingTwo className="font-medium" text="TulipTech LTD" />
+                                    <Link target="_blank noreferrer" href="https://tulip-tech.com">
+                                        <BiLinkExternal />
+                                    </Link>
+                                </div>
                             </div>
                             <TextView.Paragraph className="text-sm italic mt-1 opacity-80" text="March 2022 - Present" />
                             <TextView.Paragraph
@@ -40,13 +42,15 @@ const ExperienceSection = () => {
                 <div className="md:w-1/2 item">
                     <TimelineItem>
                         <div>
-                            <div className="flex items-center gap-x-4">
+                            <div className="sm:flex block space-y-4 sm:space-y-0 items-center gap-x-4">
                                 <TextView.HeadingTwo className="font-bold text-[18px]" text="Frontend Engineer" />
-                                {' • '}
-                                <TextView.HeadingTwo className="font-medium" text="SEO Audit Agency" />
-                                <Link target="_blank noreferrer" href="https://seoaudit.agency">
-                                    <BiLinkExternal />
-                                </Link>
+                                <span className="hidden sm:block">•</span>
+                                <div className="flex items-center justify-start gap-x-4">
+                                    <TextView.HeadingTwo className="font-medium" text="SEO Audit Agency" />
+                                    <Link target="_blank noreferrer" href="https://seoaudit.agency">
+                                        <BiLinkExternal />
+                                    </Link>
+                                </div>
                             </div>
                             <TextView.Paragraph className="text-sm italic mt-1 opacity-80" text="March 2020 - February 2022" />
                             <TextView.Paragraph

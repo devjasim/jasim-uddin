@@ -168,6 +168,7 @@
                     background-color: theme('colors.text.100');
                     @apply bg-opacity-10;
                     top: 0;
+                    z-index: -1;
                 }
 
                 .timeline-card {
@@ -194,11 +195,11 @@
                     }
                 }
             }
-            &:nth-child(odd) {
-                margin-left: auto;
+
+            @media screen and (max-width: 767.99px) {
                 .timeline-item {
-                    .timeline-card {
-                        @apply pl-10;
+                    .content {
+                        margin-left: 1rem;
                     }
                     .timeline-icon {
                         left: -6px;
@@ -209,26 +210,103 @@
                     }
                 }
             }
-            &:nth-child(even) {
-                margin-right: auto;
-                text-align: right;
-                .timeline-item {
-                    @apply relative;
-                    .timeline-card {
-                        @apply pr-10 ml-auto;
-                    }
-                    .timeline-icon {
-                        right: -6px;
-                    }
-                    &:after {
-                        right: -0.5px;
-                    }
-                }
-                .content {
-                    .items-center {
-                        flex-direction: row-reverse;
+
+            @media screen and (min-width: 767.999px) {
+                &:nth-child(odd) {
+                    margin-left: auto;
+                    .timeline-item {
+                        .timeline-card {
+                            @apply pl-10;
+                        }
+                        .timeline-icon {
+                            left: -6px;
+                        }
+
+                        &:after {
+                            left: -0.5px;
+                        }
                     }
                 }
+                &:nth-child(even) {
+                    margin-right: auto;
+                    text-align: right;
+                    .timeline-item {
+                        @apply relative;
+                        .timeline-card {
+                            @apply pr-10 ml-auto;
+                        }
+                        .timeline-icon {
+                            right: -6px;
+                        }
+                        &:after {
+                            right: -0.5px;
+                        }
+                    }
+                    .content {
+                        .items-center {
+                            flex-direction: row-reverse;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#section-projects {
+    .single-project {
+        .content {
+            overflow: hidden;
+            min-height: fit-content;
+            .initial-icon {
+                @apply absolute top-1/2 left-1/2;
+                transform: translate(-50%, -50%);
+                width: 80px;
+                height: 50px;
+                @apply bg-secondary bg-opacity-80 text-primary;
+                transition: 0.4s all ease-in-out;
+                border-radius: 0.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.5rem;
+            }
+        }
+
+        .card {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translateX(100%);
+            transition: 0.4s all ease-in-out;
+            @apply bg-secondary bg-opacity-80;
+            visibility: hidden;
+            opacity: 0;
+            max-width: 50%;
+            height: 100%;
+            padding: 1rem;
+            border-radius: 0.3rem;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+
+            h2 {
+                margin-bottom: 1rem;
+            }
+
+            @media screen and (max-width: 767.99px) {
+                max-width: 100%;
+                min-height: fit-content;
+                overflow-y: auto;
+                display: block;
+            }
+        }
+        &:hover {
+            .card {
+                transform: translateX(0);
+                visibility: visible;
+                opacity: 100;
             }
         }
     }
