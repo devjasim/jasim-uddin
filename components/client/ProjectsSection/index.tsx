@@ -33,7 +33,9 @@ export default function ProjectsSection() {
                                         </p>
                                     </div>
                                     <div className="self-center mt-4">
-                                        <Button variant="outline" label="View More" />
+                                        <a href="https://banglatalent.com" target="_blank">
+                                            <Button variant="outline" label="View More" />
+                                        </a>
                                     </div>
                                 </div>
                             </div>
