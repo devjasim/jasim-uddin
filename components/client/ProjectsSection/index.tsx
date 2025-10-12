@@ -50,11 +50,9 @@ export default function ProjectsSection() {
                                 <div className="card">
                                     <h2 className="text-xl font-bold text-white">CareApps for UK Care Homes</h2>
                                     <div className="description text-sm">
-                                        CareApps is a dashboard application that provides entire solution for Care Homes in the UK including, HR and
-                                        Medication Management for Resident and more.
+                                        Architected a 9-app healthcare platform (nursing, medication, care, pharmacy, HR, recruitment, admin, shift, user) digitizing workflows and reducing paperwork by 99%. 
                                         <p className="mt-2">
-                                            I have build and design interactive pixel perfect UI of this application, and implemented business logic
-                                            including integrated backend APIs.
+                                            Developed advanced patient-care features including body-mapping medication system, real-time vitals monitoring, and incomplete dose tracking. Optimized with Next.js 15, React 19, TypeScript, and Tailwind, achieving 90% design consistency.
                                         </p>
                                     </div>
                                     <div className="self-center mt-4">

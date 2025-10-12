@@ -14,12 +14,11 @@ export default function HeroSection() {
                     />
                     <TextView.Paragraph
                         className="mt-4 py-2 lg:w-7/12 text-[18px]"
-                        text="I’m a software engineer specializing in building and designing exceptional digital experiences. Currently, I’m
-                        focused on building accessible, human-centered products using MERN Stack."
+                        text="I'm a software engineer with 5+ years of experience building scalable, high-performance web applications. Specialized in React, Next.js, and TypeScript with a proven track record in healthcare, finance, and SaaS platforms."
                     />
                 </div>
                 <a
-                    href="https://docs.google.com/document/d/1D-Bkf8RmwSnyYLe6mOFhulnEl1okAVXwc_twqYD6zmE/edit?usp=sharing"
+                    href="https://docs.google.com/document/d/1N4UgSvvT0_9-SYdfBae39gy4AtJT3CKF1g2r2mON4SQ/edit?usp=sharing"
                     target="_blank"
                     className="mt-16 block max-w-fit"
                     rel="noreferrer">

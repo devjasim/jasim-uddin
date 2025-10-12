@@ -19,9 +19,7 @@ export default function AboutMe() {
                                 size={'lg'}
                                 text={
                                     <span>
-                                        As a Software Engineer specializing in the MERN stack with a focus on Frontend development, I bring four years
-                                        of rich experience to the table. Throughout my career, I&apos;ve had the privilege of contributing to a
-                                        variety of projects within three distinct companies in Bangladesh.
+                                        As a Senior Software Engineer with 5+ years of experience, I specialize in building scalable, high-performance web applications using modern JavaScript frameworks. Throughout my career, I&apos;ve successfully reduced build times by 50%, improved design consistency by 90%, and delivered better user experiences across healthcare, finance, and SaaS platforms.
                                     </span>
                                 }
                             />
@@ -30,20 +28,18 @@ export default function AboutMe() {
                                 className="mt-5"
                                 text={
                                     <span>
-                                        Presently, I am working with{' '}
+                                        Currently, I am working as a Senior Software Engineer at{' '}
                                         <Link className="text-primary" target="_blank" href="https://tulip-tech.com">
                                             TulipTech LTD
                                         </Link>
-                                        , a dynamic UK-based software company active in Bangladesh. Here, my role centers around developing
-                                        user-centric applications that deliver significant real-world impact. My commitment lies in crafting rich,
-                                        interactive experiences tailored to meet user needs and overcome real-world challenges.
+                                        , a UK-based software company. I architect and lead a micro-frontend monorepo of 9 healthcare apps, built a reusable UI library with 50+ components, and mentor engineers on modern frontend architecture. My work focuses on creating enterprise-grade solutions that deliver real-world impact.
                                     </span>
                                 }
                             />
                             <TextView.Paragraph
                                 className="my-5"
                                 size={'lg'}
-                                text={<span>Here are a few technologies I’ve been working with recently:</span>}
+                                text={<span>Here are a few technologies I've been working with recently:</span>}
                             />
                         </div>
                     </div>
@@ -61,20 +57,6 @@ export default function AboutMe() {
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A.998.998 0 0 0 5 3v18a1 1 0 0 0 .536.886zM7 4.909 17.243 12 7 19.091V4.909z"></path>
                             </svg>{' '}
-                            JavaScript (ES6+)
-                        </small>
-                        <small className="flex items-center gap-x-3">
-                            <svg
-                                stroke="currentColor"
-                                fill="currentColor"
-                                strokeWidth="0"
-                                viewBox="0 0 24 24"
-                                className="text-primary"
-                                height="1em"
-                                width="1em"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A.998.998 0 0 0 5 3v18a1 1 0 0 0 .536.886zM7 4.909 17.243 12 7 19.091V4.909z"></path>
-                            </svg>
                             TypeScript
                         </small>
                         <small className="flex items-center gap-x-3">
@@ -89,7 +71,7 @@ export default function AboutMe() {
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A.998.998 0 0 0 5 3v18a1 1 0 0 0 .536.886zM7 4.909 17.243 12 7 19.091V4.909z"></path>
                             </svg>
-                            React.JS
+                            React.js
                         </small>
                         <small className="flex items-center gap-x-3">
                             <svg
@@ -117,7 +99,21 @@ export default function AboutMe() {
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A.998.998 0 0 0 5 3v18a1 1 0 0 0 .536.886zM7 4.909 17.243 12 7 19.091V4.909z"></path>
                             </svg>
-                            Redux
+                            Node.js
+                        </small>
+                        <small className="flex items-center gap-x-3">
+                            <svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                strokeWidth="0"
+                                viewBox="0 0 24 24"
+                                className="text-primary"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A.998.998 0 0 0 5 3v18a1 1 0 0 0 .536.886zM7 4.909 17.243 12 7 19.091V4.909z"></path>
+                            </svg>
+                            Turborepo
                         </small>
                         <small className="flex items-center gap-x-3">
                             <svg
@@ -132,6 +128,34 @@ export default function AboutMe() {
                                 <path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A.998.998 0 0 0 5 3v18a1 1 0 0 0 .536.886zM7 4.909 17.243 12 7 19.091V4.909z"></path>
                             </svg>
                             Tailwind CSS
+                        </small>
+                        <small className="flex items-center gap-x-3">
+                            <svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                strokeWidth="0"
+                                viewBox="0 0 24 24"
+                                className="text-primary"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A.998.998 0 0 0 5 3v18a1 1 0 0 0 .536.886zM7 4.909 17.243 12 7 19.091V4.909z"></path>
+                            </svg>
+                            GraphQL
+                        </small>
+                        <small className="flex items-center gap-x-3">
+                            <svg
+                                stroke="currentColor"
+                                fill="currentColor"
+                                strokeWidth="0"
+                                viewBox="0 0 24 24"
+                                className="text-primary"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A.998.998 0 0 0 5 3v18a1 1 0 0 0 .536.886zM7 4.909 17.243 12 7 19.091V4.909z"></path>
+                            </svg>
+                            React Query
                         </small>
                     </div>
                 </div>

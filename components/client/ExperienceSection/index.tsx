@@ -22,7 +22,7 @@ const ExperienceSection = () => {
                     <TimelineItem>
                         <div>
                             <div className="sm:flex space-y-4 sm:space-y-0 block items-center gap-x-4">
-                                <TextView.HeadingTwo className="font-bold text-[18px]" text="Software Engineer" />
+                                <TextView.HeadingTwo className="font-bold text-[18px]" text="Senior Software Engineer" />
                                 <span className="hidden sm:block">•</span>
                                 <div className="flex items-center justify-start gap-x-4">
                                     <TextView.HeadingTwo className="font-medium" text="TulipTech LTD" />
@@ -34,7 +34,11 @@ const ExperienceSection = () => {
                             <TextView.Paragraph className="text-sm italic mt-1 opacity-80" text="March 2022 - Present" />
                             <TextView.Paragraph
                                 className="mt-3 text-base description"
-                                text="Working as a Software Engineer for build scalable and reliable user facing frontend application using React.js, Next.js, Redux, SCSS, CSS, etc. Lead the mentor the Frontend team for multiple projects"
+                                text={
+                                    <>
+                                        Architected and led a micro-frontend monorepo of 9 healthcare apps using Turborepo, reducing build times by ~40-60% and boosting app performance by ~35-50%. Built a reusable UI library with 50+ components and mentored engineers on modern frontend architecture, improving team productivity by 35%.
+                                    </>
+                                }
                             />
                         </div>
                     </TimelineItem>
@@ -55,7 +59,11 @@ const ExperienceSection = () => {
                             <TextView.Paragraph className="text-sm italic mt-1 opacity-80" text="March 2020 - February 2022" />
                             <TextView.Paragraph
                                 className="mt-3 text-base description"
-                                text="Worked as Frontend engineer and played a crucial role to build a SaaS application using React.js, Redux and Material UI which provides SEO services. Gained a 50% company revenue growth. I've achieved a 50% boost on my skills in developing dashboard."
+                                text={
+                                    <>
+                                        Developed SEO service providing software in an agile environment using React, Redux, TypeScript, and pixel-perfect design. Led scaling and implementation of new features including white label tools, page audit and report generation tools, and keyword research tools, resulting in a 50% increase in premium user traffic and 90% revenue growth.
+                                    </>
+                                }
                             />
                         </div>
                     </TimelineItem>

@@ -54,7 +54,7 @@ export default function Header() {
                             <li>
                                 <a
                                     className=""
-                                    href="https://docs.google.com/document/d/1D-Bkf8RmwSnyYLe6mOFhulnEl1okAVXwc_twqYD6zmE/edit?usp=sharing"
+                                    href="https://docs.google.com/document/d/1N4UgSvvT0_9-SYdfBae39gy4AtJT3CKF1g2r2mON4SQ/edit?usp=sharing"
                                     target="_blank"
                                     rel="noreferrer">
                                     <Button label="Resume" />
