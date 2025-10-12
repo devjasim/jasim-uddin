@@ -10,10 +10,7 @@ export default function EducationSection() {
             </div>
             <div className="flex flex-col md:flex-row items-start justify-start gap-20 md:gap-x-20">
                 <div>
-                    <TextView.HeadingThree
-                        className="text-accent text-xl font-semibold"
-                        text="Bachelor of Science, CSE (Incomplete)"
-                    />
+                    <TextView.HeadingThree className="text-accent text-xl font-semibold" text="Bachelor of Science, CSE (Incomplete)" />
                     <TextView.HeadingThree className="text-lg my-2" text="Uttara University, Dhaka, Bangladesh" />
                     <TextView.Paragraph className="text-accent" text="January 2020 - Present" />
                     <div className="mt-5 grid gap-y-2 ml-3">

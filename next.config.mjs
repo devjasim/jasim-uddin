@@ -4,9 +4,7 @@ const nextConfig = {
     output: 'standalone',
     cleanDistDir: true,
     poweredByHeader: false,
-    swcMinify: true,
     compress: true,
-    optimizeFonts: true,
     generateEtags: true,
     pageExtensions: ['tsx', 'ts'],
 };

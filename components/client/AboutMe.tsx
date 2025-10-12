@@ -19,7 +19,10 @@ export default function AboutMe() {
                                 size={'lg'}
                                 text={
                                     <span>
-                                        As a Senior Software Engineer with 5+ years of experience, I specialize in building scalable, high-performance web applications using modern JavaScript frameworks. Throughout my career, I&apos;ve successfully reduced build times by 50%, improved design consistency by 90%, and delivered better user experiences across healthcare, finance, and SaaS platforms.
+                                        As a Senior Software Engineer with 5+ years of experience, I specialize in building scalable, high-performance
+                                        web applications using modern JavaScript frameworks. Throughout my career, I&apos;ve successfully reduced
+                                        build times by 50%, improved design consistency by 90%, and delivered better user experiences across
+                                        healthcare, finance, and SaaS platforms.
                                     </span>
                                 }
                             />
@@ -32,14 +35,16 @@ export default function AboutMe() {
                                         <Link className="text-primary" target="_blank" href="https://tulip-tech.com">
                                             TulipTech LTD
                                         </Link>
-                                        , a UK-based software company. I architect and lead a micro-frontend monorepo of 9 healthcare apps, built a reusable UI library with 50+ components, and mentor engineers on modern frontend architecture. My work focuses on creating enterprise-grade solutions that deliver real-world impact.
+                                        , a UK-based software company. I architect and lead a micro-frontend monorepo of 9 healthcare apps, built a
+                                        reusable UI library with 50+ components, and mentor engineers on modern frontend architecture. My work focuses
+                                        on creating enterprise-grade solutions that deliver real-world impact.
                                     </span>
                                 }
                             />
                             <TextView.Paragraph
                                 className="my-5"
                                 size={'lg'}
-                                text={<span>Here are a few technologies I've been working with recently:</span>}
+                                text={<span>Here are a few technologies I&apos;ve been working with recently:</span>}
                             />
                         </div>
                     </div>

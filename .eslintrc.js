@@ -3,7 +3,7 @@ module.exports = {
     parserOptions: {
         files: ['*.ts', '*.tsx', '*.js', '*.jsx'],
         sourceType: 'module',
-        tsconfigRootDir: './',
+        tsconfigRootDir: __dirname,
     },
     ignorePatterns: ['tailwind.config.js'],
     plugins: ['@typescript-eslint/eslint-plugin', 'prettier', 'simple-import-sort'],

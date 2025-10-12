@@ -36,7 +36,9 @@ const ExperienceSection = () => {
                                 className="mt-3 text-base description"
                                 text={
                                     <>
-                                        Architected and led a micro-frontend monorepo of 9 healthcare apps using Turborepo, reducing build times by ~40-60% and boosting app performance by ~35-50%. Built a reusable UI library with 50+ components and mentored engineers on modern frontend architecture, improving team productivity by 35%.
+                                        Architected and led a micro-frontend monorepo of 9 healthcare apps using Turborepo, reducing build times by
+                                        ~40-60% and boosting app performance by ~35-50%. Built a reusable UI library with 50+ components and mentored
+                                        engineers on modern frontend architecture, improving team productivity by 35%.
                                     </>
                                 }
                             />
@@ -61,7 +63,10 @@ const ExperienceSection = () => {
                                 className="mt-3 text-base description"
                                 text={
                                     <>
-                                        Developed SEO service providing software in an agile environment using React, Redux, TypeScript, and pixel-perfect design. Led scaling and implementation of new features including white label tools, page audit and report generation tools, and keyword research tools, resulting in a 50% increase in premium user traffic and 90% revenue growth.
+                                        Developed SEO service providing software in an agile environment using React, Redux, TypeScript, and
+                                        pixel-perfect design. Led scaling and implementation of new features including white label tools, page audit
+                                        and report generation tools, and keyword research tools, resulting in a 50% increase in premium user traffic
+                                        and 90% revenue growth.
                                     </>
                                 }
                             />
