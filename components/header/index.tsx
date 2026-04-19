@@ -53,22 +53,22 @@ export default function Header() {
                     <div className={`navbar-items lg:flex ${isMenuOPen ? 'show-menu' : 'hide-menu'}`}>
                         <ul className="menu flex justify-between items-center gap-x-5 xl:gap-x-8 2xl:gap-x-10">
                             <li className={`navbar-item ${activeSection?.includes('introduction') ? 'active' : ''}`}>
-                                <a href="/#introduction">Home</a>
+                                <Link href="/#introduction">Home</Link>
                             </li>
                             <li className={`navbar-item ${activeSection?.includes('about') ? 'active' : ''}`}>
-                                <a href="/#about">About</a>
+                                <Link href="/#about">About</Link>
                             </li>
                             <li className={`navbar-item ${activeSection?.includes('education') ? 'active' : ''}`}>
-                                <a href="/#education">Education</a>
+                                <Link href="/#education">Education</Link>
                             </li>
                             <li className={`navbar-item ${activeSection?.includes('experience') ? 'active' : ''}`}>
-                                <a href="/#experience">Experience</a>
+                                <Link href="/#experience">Experience</Link>
                             </li>
                             <li className={`navbar-item ${activeSection?.includes('section-projects') ? 'active' : ''}`}>
-                                <a href="/#section-projects">Projects</a>
+                                <Link href="/#section-projects">Projects</Link>
                             </li>
                             <li className={`navbar-item ${activeSection?.includes('contact') ? 'active' : ''}`}>
-                                <a href="/#contact">Contact</a>
+                                <Link href="/#contact">Contact</Link>
                             </li>
                             <li>
                                 <a

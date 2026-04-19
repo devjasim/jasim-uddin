@@ -14,7 +14,7 @@ const inter = Barlow({ subsets: ['latin'], weight: ['100', '200', '300', '400', 
 export const metadata: Metadata = {
     title: 'Jasim Uddin - Software Engineer Portfolio | Frontend Expert | Bangladesh',
     description:
-        'Welcome to the portfolio of Jasim Uddin, a passionate Software Engineer from Bangladesh with 4 years of experience. Explore my projects and expertise!',
+        'Portfolio of Jasim Uddin, a Senior Frontend Engineer with 6+ years of experience building production-grade React/Next.js applications across healthcare, fintech, and SaaS.',
 };
 
 export default function RootLayout({
