@@ -19,10 +19,9 @@ export default function AboutMe() {
                                 size={'lg'}
                                 text={
                                     <span>
-                                        As a Senior Software Engineer with 5+ years of experience, I specialize in building scalable, high-performance
-                                        web applications using modern JavaScript frameworks. Throughout my career, I&apos;ve successfully reduced
-                                        build times by 50%, improved design consistency by 90%, and delivered better user experiences across
-                                        healthcare, finance, and SaaS platforms.
+                                        Senior Frontend Engineer with 6+ years of experience building production-grade web applications using React,
+                                        Next.js, and TypeScript. I&apos;ve architected monorepo platforms, built shared component libraries, and led
+                                        frontend teams delivering real-world impact across healthcare, fintech, and SaaS domains.
                                     </span>
                                 }
                             />
@@ -31,13 +30,14 @@ export default function AboutMe() {
                                 className="mt-5"
                                 text={
                                     <span>
-                                        Currently, I am working as a Senior Software Engineer at{' '}
+                                        Currently at{' '}
                                         <Link className="text-primary" target="_blank" href="https://tulip-tech.com">
                                             TulipTech LTD
                                         </Link>
-                                        , a UK-based software company. I architect and lead a micro-frontend monorepo of 9 healthcare apps, built a
-                                        reusable UI library with 50+ components, and mentor engineers on modern frontend architecture. My work focuses
-                                        on creating enterprise-grade solutions that deliver real-world impact.
+                                        , I architect and lead a Turborepo monorepo housing 9 interconnected healthcare apps for UK care homes. I
+                                        built and maintain a shared UI component library (50+ components) used across all products, lead a team of 10
+                                        frontend engineers across UK/Bangladesh time zones, and recently migrated the platform to Next.js 15 with
+                                        React 19.
                                     </span>
                                 }
                             />

@@ -14,7 +14,7 @@ export default function HeroSection() {
                     />
                     <TextView.Paragraph
                         className="mt-4 py-2 lg:w-7/12 text-[18px]"
-                        text="I'm a software engineer with 5+ years of experience building scalable, high-performance web applications. Specialized in React, Next.js, and TypeScript with a proven track record in healthcare, finance, and SaaS platforms."
+                        text="Senior Frontend Engineer with 6+ years of experience building production-grade React/Next.js applications across healthcare, fintech, and SaaS. Currently architecting a Turborepo monorepo serving 9 healthcare apps for UK care homes."
                     />
                 </div>
                 <a

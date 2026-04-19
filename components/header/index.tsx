@@ -1,6 +1,5 @@
 'use client';
 import Link from 'next/link';
-import { usePathname, useSearchParams } from 'next/navigation';
 
 import React from 'react';
 
@@ -9,16 +8,36 @@ import TextView from '@components/common/TextView';
 import ThemeToggle from '@components/common/ThemeToggle';
 
 export default function Header() {
-    const [hash, setHash] = React.useState('');
+    const [activeSection, setActiveSection] = React.useState('');
 
     React.useEffect(() => {
-        setHash(window.location.hash);
+        setActiveSection(window.location.hash);
+
         const handleHashChange = () => {
-            setHash(window.location.hash);
+            setActiveSection(window.location.hash);
         };
         window.addEventListener('hashchange', handleHashChange);
+
+        const sectionIds = ['introduction', 'about', 'education', 'experience', 'section-projects', 'contact'];
+        const observer = new IntersectionObserver(
+            entries => {
+                const visible = entries.filter(e => e.isIntersecting);
+                if (visible.length > 0) {
+                    const topmost = visible.reduce((a, b) => (a.boundingClientRect.top < b.boundingClientRect.top ? a : b));
+                    setActiveSection(`#${topmost.target.id}`);
+                }
+            },
+            { rootMargin: '-20% 0px -60% 0px', threshold: 0 },
+        );
+
+        sectionIds.forEach(id => {
+            const el = document.getElementById(id);
+            if (el) observer.observe(el);
+        });
+
         return () => {
             window.removeEventListener('hashchange', handleHashChange);
+            observer.disconnect();
         };
     }, []);
 
@@ -33,22 +52,22 @@ export default function Header() {
                 <div className="navbar-end">
                     <div className={`navbar-items lg:flex ${isMenuOPen ? 'show-menu' : 'hide-menu'}`}>
                         <ul className="menu flex justify-between items-center gap-x-5 xl:gap-x-8 2xl:gap-x-10">
-                            <li className={`navbar-item ${hash?.includes('introduction') ? 'active' : ''}`}>
+                            <li className={`navbar-item ${activeSection?.includes('introduction') ? 'active' : ''}`}>
                                 <a href="/#introduction">Home</a>
                             </li>
-                            <li className={`navbar-item ${hash?.includes('about') ? 'active' : ''}`}>
+                            <li className={`navbar-item ${activeSection?.includes('about') ? 'active' : ''}`}>
                                 <a href="/#about">About</a>
                             </li>
-                            <li className={`navbar-item ${hash?.includes('education') ? 'active' : ''}`}>
+                            <li className={`navbar-item ${activeSection?.includes('education') ? 'active' : ''}`}>
                                 <a href="/#education">Education</a>
                             </li>
-                            <li className={`navbar-item ${hash?.includes('experience') ? 'active' : ''}`}>
+                            <li className={`navbar-item ${activeSection?.includes('experience') ? 'active' : ''}`}>
                                 <a href="/#experience">Experience</a>
                             </li>
-                            <li className={`navbar-item ${hash?.includes('section-projects') ? 'active' : ''}`}>
+                            <li className={`navbar-item ${activeSection?.includes('section-projects') ? 'active' : ''}`}>
                                 <a href="/#section-projects">Projects</a>
                             </li>
-                            <li className={`navbar-item ${hash?.includes('contact') ? 'active' : ''}`}>
+                            <li className={`navbar-item ${activeSection?.includes('contact') ? 'active' : ''}`}>
                                 <a href="/#contact">Contact</a>
                             </li>
                             <li>

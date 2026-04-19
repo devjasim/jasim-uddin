@@ -1,5 +1,3 @@
-import { BiLinkExternal } from 'react-icons/bi';
-
 import Button from '@components/common/Button';
 import TextView from '@components/common/TextView';
 
@@ -25,11 +23,10 @@ export default function ProjectsSection() {
                                 <div className="card">
                                     <h2 className="text-xl font-bold text-white">BanglaTalent Job Portal</h2>
                                     <div className="description text-sm">
-                                        Bangla Talent is a versatile job portal that connects job seekers with top opportunities in their home country
-                                        and the UK, catering to both local and international career aspirations.
+                                        A job portal connecting talent in Bangladesh with opportunities in the UK. Built with Next.js and TypeScript.
                                         <p className="mt-2">
-                                            I designed the frontend architecture of this application and collaborated with junior team members to
-                                            successfully drive the project to completion.
+                                            Designed the frontend architecture, mentored junior engineers through implementation, and shipped the
+                                            platform from initial concept to production launch.
                                         </p>
                                     </div>
                                     <div className="self-center mt-4">
@@ -50,16 +47,17 @@ export default function ProjectsSection() {
                                 <div className="card">
                                     <h2 className="text-xl font-bold text-white">CareApps for UK Care Homes</h2>
                                     <div className="description text-sm">
-                                        Architected a 9-app healthcare platform (nursing, medication, care, pharmacy, HR, recruitment, admin, shift,
-                                        user) digitizing workflows and reducing paperwork by 99%.
+                                        A 9-app healthcare platform for UK care homes covering nursing, medication, care, pharmacy, HR, recruitment,
+                                        admin, shift management, and user management.
                                         <p className="mt-2">
-                                            Developed advanced patient-care features including body-mapping medication system, real-time vitals
-                                            monitoring, and incomplete dose tracking. Optimized with Next.js 15, React 19, TypeScript, and Tailwind,
-                                            achieving 90% design consistency.
+                                            Built with Next.js 15, React 19, TypeScript, and Turborepo. Features include body-mapping medication
+                                            system, real-time vitals monitoring, and shift scheduling with a shared 50+ component UI library.
                                         </p>
                                     </div>
                                     <div className="self-center mt-4">
-                                        <Button variant="outline" label="View More" />
+                                        <a href="https://app.empathika.com" target="_blank">
+                                            <Button variant="outline" label="View More" />
+                                        </a>
                                     </div>
                                 </div>
                             </div>

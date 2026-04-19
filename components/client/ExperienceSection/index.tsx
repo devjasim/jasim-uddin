@@ -22,7 +22,7 @@ const ExperienceSection = () => {
                     <TimelineItem>
                         <div>
                             <div className="sm:flex space-y-4 sm:space-y-0 block items-center gap-x-4">
-                                <TextView.HeadingTwo className="font-bold text-[18px]" text="Senior Software Engineer" />
+                                <TextView.HeadingTwo className="font-bold text-[18px]" text="Senior Software Engineer / Team Lead" />
                                 <span className="hidden sm:block">•</span>
                                 <div className="flex items-center justify-start gap-x-4">
                                     <TextView.HeadingTwo className="font-medium" text="TulipTech LTD" />
@@ -36,9 +36,10 @@ const ExperienceSection = () => {
                                 className="mt-3 text-base description"
                                 text={
                                     <>
-                                        Architected and led a micro-frontend monorepo of 9 healthcare apps using Turborepo, reducing build times by
-                                        ~40-60% and boosting app performance by ~35-50%. Built a reusable UI library with 50+ components and mentored
-                                        engineers on modern frontend architecture, improving team productivity by 35%.
+                                        Architected a Turborepo monorepo housing 9 interconnected healthcare apps (nursing, medication, care,
+                                        pharmacy, HR, recruitment, admin, shift, user management) for UK care homes, reducing cross-app build times by
+                                        40-60%. Built a shared UI component library (50+ components), led a team of 10 frontend engineers across time
+                                        zones, and migrated the platform to Next.js 15 with React 19.
                                     </>
                                 }
                             />
@@ -63,10 +64,10 @@ const ExperienceSection = () => {
                                 className="mt-3 text-base description"
                                 text={
                                     <>
-                                        Developed SEO service providing software in an agile environment using React, Redux, TypeScript, and
-                                        pixel-perfect design. Led scaling and implementation of new features including white label tools, page audit
-                                        and report generation tools, and keyword research tools, resulting in a 50% increase in premium user traffic
-                                        and 90% revenue growth.
+                                        Built the SEO Audit Agency platform from scratch using React, Redux, and TypeScript &mdash; a white-label SaaS
+                                        product offering page audits, keyword research, and competitive analysis. Developed a drag-and-drop report
+                                        builder, automated PDF export, and white-label system allowing agency clients to rebrand under their own
+                                        domain. Set up automated CI/CD on DigitalOcean with GitHub Actions.
                                     </>
                                 }
                             />
